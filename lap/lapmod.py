@@ -336,6 +336,6 @@ def lapmod(n, cc, ii, kk, fast=True, return_cost=True,
         _pya(n, cc, ii, kk, n_free_rows, free_rows, x, y, v)
         # log.debug('x, y, v: %s %s %s', x, y, v)
     if return_cost is True:
-        return get_cost(n, cc, ii, kk, x), x, y
+        return get_cost(n, cc, ii, kk, x), x, y, v
     else:
-        return x, y
+        return x, y, v
